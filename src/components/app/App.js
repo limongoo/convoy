@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import key from './key.js';
+// import key from './key.js';
 import Search from '../search/Search';
 import Images from '../image/Images';
 
+const UCLIENT_ID = `${process.env.REACT_APP_UCLIENT_ID}`;
+
 class App extends Component {
   
+
   constructor() {
     super();
     this.state = {
@@ -19,10 +22,10 @@ class App extends Component {
     this.performSearch();
   }
 
-  performSearch = (query = 'light') => {
+  performSearch = (query = 'plants') => {
     axios
       .get(
-        `https://api.unsplash.com/search/photos/?page=1&per_page=10&query=${query}&client_id=${key.ClientID}`
+        `https://api.unsplash.com/search/photos/?page=1&per_page=10&query=${query}&client_id=${UCLIENT_ID}`
       )
       .then(data => {
         this.setState({ imgs: data.data.results, loadingState: false });
@@ -35,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="header">
           <h1>Kotak</h1>
           <Search onSearch={this.performSearch} />
         </header>
