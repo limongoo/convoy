@@ -5,15 +5,16 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "npm": "^6.4.1",
     "react": "^16.5.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.5.2",
     "react-headroom": "^2.2.2",
-    "react-scripts": "1.1.5",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-router-scroll-top": "^0.1.1",
+    "react-scripts": "1.1.5",
     "react-scrollable-anchor": "^0.6.1"
   },
   "scripts": {
