@@ -9,3 +9,4 @@ Technologies Used:
 - React
 - Webpack
 - Node.js
+- Unsplash API
