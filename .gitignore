@@ -21,4 +21,4 @@ yarn-error.log*
 
 .vs*
 
-/src/components/app/tkey.js
+/src/components/app/skey.js
