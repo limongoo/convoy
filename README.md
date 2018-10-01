@@ -1,6 +1,6 @@
 # React-Unsplash Web App
 
-- Ivan Limongan
+Convoy — an image search web app by Ivan Limongan
 
 View Live App: 
 Repository:

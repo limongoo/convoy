@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="header">
-          <h1>Kotak</h1>
+          <h1>Convoy</h1>
           <Search onSearch={this.performSearch} />
         </header>
         <div>
