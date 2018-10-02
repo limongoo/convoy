@@ -1,6 +1,6 @@
 @import '../../styles/variables.css';
 
-
+/* --- Grid --- */
 .app {
   min-height: 100vh;
   display: grid;
@@ -26,20 +26,16 @@
   background-color: $black;
   transition: 0.3s ease all;
 
-  
-}
-
-#header:hover {
-  background-color: $white;
+  &:hover {
+    background-color: $white;
+  }
 }
 
 #main {
   grid-area: content;
   text-align: center;
-  /* background-color: $lightgray; */
-  /* background-image: linear-gradient(90deg, #e6e6e6 100%, #fcfcfc 0%); */
   padding: 0;
-  margin: -12rem 0 0;
+  margin: 0;
 }
 
 #footer {
@@ -48,18 +44,18 @@
   text-align: left;
 }
 
-.nav-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
 
+
+/* --- container style --- */
 .head-container {
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   flex-direction: row;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, 0%);
   position: fixed;
   z-index: 1000;
   /* background-color: $yellow; */
@@ -100,10 +96,14 @@
 }
 
 .footer {
-  text-align: left;
+  text-align: center;
   color: $gray;
-}
 
-.footer-container {
-
+  a {
+    border-bottom: 3px solid $white;
+  }
+  
+  a:hover {
+    border-bottom: 3px solid $red;
+  }
 }

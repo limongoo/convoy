@@ -7,9 +7,9 @@ const Image = props =>
       <img src={props.url} alt={props.name} />
     </a>
     <p>
-			Photo by 
+			Photo: 
       <a href={props.user} target="_blank" rel="author noopener noreferrer"> {props.name}</a>
-      <a href={props.link} target="_blank" rel="author noopener noreferrer"> See on Unsplash</a>
+      <a href={props.link} target="_blank" rel="author noopener noreferrer"> — Unsplash</a>
     </p>
   </li>;
 

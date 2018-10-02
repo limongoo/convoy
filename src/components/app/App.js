@@ -37,11 +37,11 @@ class App extends Component {
     return (
       <div className="app">
         <header role="banner" id="header">
-          <section className="head-container">
-            <div className="maxwidth-wrap">
+          <section className="head-container maxwidth-wrap">
+          
               <h1 className="logo">Convoy</h1>
               <Search onSearch={this.performSearch} />
-            </div>
+            
           </section>
         </header>
         <main role="main" id="main">
@@ -52,8 +52,8 @@ class App extends Component {
           </section>
         </main>
         <footer role="contentinfo" id="footer">
-          <section className="footer-container maxwidth-wrap">
-        
+          <section className="footer maxwidth-wrap"> 
+            <p>(c) <a href="https://github.com/limongoo/convoy" target="_blank" rel="author noopener noreferrer">Convoy — Ivan Limongan</a></p>
           </section>
         </footer>
 
