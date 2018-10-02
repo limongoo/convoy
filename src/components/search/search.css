@@ -1,0 +1,50 @@
+input {
+  font-size: 1.12em;
+  height: 46px;
+  padding-bottom: 1em;
+  padding-left: 0;
+  background: none;
+  border: none;
+  outline: 0;
+  border-bottom: 4px solid #e4e4e4;
+  transition: border-color .4s;
+}
+
+input:focus {
+  border-color: #c1c1c1;
+}
+
+#submit {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  z-index: 2000;
+}
+
+.search-form input:only-of-type {
+  width: 100%;
+  margin-right: -40px;
+  padding-right: 50px;
+}
+
+.submit-button {
+  float: right;
+  margin-right: -10px;
+}
+
+
+
+.is-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

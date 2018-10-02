@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './search.css';
 
 export default class Search extends Component {
   state = {
@@ -24,10 +25,10 @@ export default class Search extends Component {
           onChange={this.onSearchChange}
           ref={input => (this.query = input)}
           name="search"
-          placeholder="Search"
+          placeholder="Ex: Plants"
         />
-        <button type="submit" id="submit" className="search-button">
-          <i className="material-icons icn-search">search</i>
+        <button type="submit" id="submit" className="submit-button">
+          search
         </button>
       </form>
     );

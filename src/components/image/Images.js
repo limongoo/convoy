@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from './Image';
 import ImageError from './ImageError';
+import './image.css';
 
 const Images = props => {
   const results = props.data;
@@ -20,7 +21,7 @@ const Images = props => {
   }
 
   return (
-    <ul>
+    <ul className="image-ul">
       {img}
     </ul>
   );

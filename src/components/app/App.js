@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import './app.css';
 import axios from 'axios';
-// import key from './key.js';
 import Search from '../search/Search';
 import Images from '../image/Images';
-
 const UCLIENT_ID = `${process.env.REACT_APP_UCLIENT_ID}`;
 
 class App extends Component {
@@ -37,16 +35,28 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="header">
-          <h1>Convoy</h1>
-          <Search onSearch={this.performSearch} />
+      <div className="app">
+        <header role="banner" id="header">
+          <section className="head-container">
+            <div className="maxwidth-wrap">
+              <h1 className="logo">Convoy</h1>
+              <Search onSearch={this.performSearch} />
+            </div>
+          </section>
         </header>
-        <div>
-          {this.state.loadingState
-            ? <p>Loading</p>
-            : <Images data={this.state.imgs} />}
-        </div>
+        <main role="main" id="main">
+          <section className="main-container maxwidth-wrap">
+            {this.state.loadingState
+              ? <p>Loading Images</p>
+              : <Images data={this.state.imgs} />}
+          </section>
+        </main>
+        <footer role="contentinfo" id="footer">
+          <section className="footer-container maxwidth-wrap">
+        
+          </section>
+        </footer>
+
       </div>
     );
   }
