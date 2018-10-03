@@ -22,7 +22,7 @@ h1, h2, h3, h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 0 0 0rem 0;
-  color: #222222;
+  color: $black;
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
 }
