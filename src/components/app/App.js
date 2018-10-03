@@ -38,14 +38,15 @@ class App extends Component {
       <div className="app">
         <header role="banner" id="header">
           <section className="head-container maxwidth-wrap">
-        
+            
             <h1 className="logo">Convoy</h1>
             <Search onSearch={this.performSearch} />
-          
+            
           </section>
         </header>
         <main role="main" id="main">
           <section className="main-container maxwidth-wrap">
+          
             {this.state.loadingState
               ? <p>Loading Images</p>
               : <Images data={this.state.imgs} />}
