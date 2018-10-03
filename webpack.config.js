@@ -5,6 +5,8 @@ const HtmlPlugin = require('html-webpack-plugin');
 const buildDir = 'build';
 const path = `${__dirname}/${buildDir}`;
 
+var postCSSConfig = require('./postcss.config');
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -30,6 +32,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        include: srcPath,
+        loader: 'style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]&camelCase!postcss',
         use: [
           {
             loader: 'style-loader',

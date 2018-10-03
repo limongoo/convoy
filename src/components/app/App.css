@@ -14,21 +14,14 @@
 .maxwidth-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  /* width: 100%; */
 }
-
 
 #header {
   grid-area: header;
   padding: 1rem;
   text-align: center;
   position: relative;
-  background-color: $black;
   transition: 0.3s ease all;
-
-  &:hover {
-    background-color: $white;
-  }
 }
 
 #main {
@@ -53,40 +46,46 @@
   text-align: center;
   align-items: center;
   flex-direction: row;
-  top: 3%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%, 0%);
   position: fixed;
+  padding: 1rem 3rem 0;
   z-index: 1000;
-  /* background-color: $yellow; */
+  background-color: rgba(255,255,255,0);
   width: 100%;
-  
-  li {
-    list-style-type: none;
+  transition: 0.3s ease all;
+}
 
-    a {
-      text-decoration: none;
-      color: $black;
-      transition: 0.3s ease all;
-      padding: 0 0 3px;
-      border-bottom: 3px solid rgba(0,0,0,0);
-      font-weight: 600;
-    }
-    
-    a:hover {
-      color: rgb(98, 98, 98);
-      border-bottom: 3px solid $yellow;
-    }
-  }
+.head-container:hover {
+  background-color: rgba(255,255,255,1);
+}
+
+.head-container li {
+  list-style-type: none;
+}
+
+.head-container li a {
+  text-decoration: none;
+  color: #222;
+  transition: 0.3s ease all;
+  padding: 0 0 3px;
+  border-bottom: 3px solid rgba(0,0,0,0);
+  font-weight: 600;
+}
+
+.head-container li a:hover {
+  color: rgb(98, 98, 98);
+  border-bottom: 3px solid #a2a2a2;
 }
 
 .nav-ul {
   display: flex;
   margin-top: 2rem;
+}
 
-  li {
-    padding: 0 1rem;
-  }
+.nav-ul li {
+  padding: 0 1rem;
 }
 
 .main-container {
@@ -97,17 +96,13 @@
 
 .footer {
   text-align: center;
-  color: $gray;
-
-  a {
-    border-bottom: 3px solid $white;
-  }
-  
-  a:hover {
-    border-bottom: 3px solid $red;
-  }
+  color: #222;
 }
 
-.logo {
-  color: $yellow;
+.footer a {
+  border-bottom: 3px solid #fff;
+}
+
+.footer a:hover {
+  border-bottom: 3px solid #a2a2a2;
 }

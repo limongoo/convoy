@@ -1,11 +1,12 @@
 {
   "name": "react-unplash",
-  "version": "0.1.0",
-  "description": "Blank Template",
+  "version": "1.0.0",
+  "description": "Convoy - an image search app built with react and unsplash api",
   "main": "index.js",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "create-react-app-postcss": "^1.1.1",
     "npm": "^6.4.1",
     "react": "^16.5.2",
     "react-animate-on-scroll": "^2.1.5",
@@ -18,9 +19,11 @@
     "react-scrollable-anchor": "^0.6.1"
   },
   "scripts": {
+    "build:css": "postcss src/styles/main.css -o src/index.css",
+    "watch:css": "postcss src/styles/main.css -o src/index.css -w",
     "lint": "eslint src",
     "prebuild": "npm run lint",
-    "start": "react-scripts start",
+    "start": "react-scripts start webpack-dev-server -p watch:css start-js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -28,7 +31,7 @@
   "author": "Ivan Limongan",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^8.0.0",
+    "autoprefixer": "^8.6.5",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-loader": "^7.1.2",
@@ -50,8 +53,14 @@
     "foursquare": "0.0.1",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.4.0",
+    "postcss-color-function": "^4.0.1",
     "postcss-import": "^11.1.0",
+    "postcss-initial": "^3.0.0",
     "postcss-loader": "^2.1.0",
+    "postcss-math": "0.0.10",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^4.1.0",
+    "postcss-simple-vars": "^5.0.1",
     "precss": "^3.1.0",
     "style-loader": "^0.20.2",
     "url-loader": "^0.6.2",

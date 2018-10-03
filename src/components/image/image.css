@@ -1,7 +1,35 @@
 .image-ul {
-  display: grid;
+  /* display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   list-style: none;
+  padding: 0; */
+  list-style: none;
+  column-gap: 0.5rem;
+}
+
+.image-li {
+  background: #fff;
   padding: 0;
+  margin: 0 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .image-ul {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .image-ul {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .image-ul {
+    column-count: 2;
+  }
 }
