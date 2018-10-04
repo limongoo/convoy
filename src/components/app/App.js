@@ -3,6 +3,7 @@ import './app.css';
 import axios from 'axios';
 import Search from '../search/Search';
 import Images from '../image/Images';
+import Headroom from 'react-headroom';
 const UCLIENT_ID = `${process.env.REACT_APP_UCLIENT_ID}`;
 
 class App extends Component {
@@ -23,7 +24,7 @@ class App extends Component {
   performSearch = (query = 'plants') => {
     axios
       .get(
-        `https://api.unsplash.com/search/photos/?page=1&per_page=20&query=${query}&client_id=${UCLIENT_ID}`
+        `https://api.unsplash.com/search/photos/?page=1&per_page=30&query=${query}&client_id=${UCLIENT_ID}`
       )
       .then(data => {
         this.setState({ imgs: data.data.results, loadingState: false });
@@ -36,14 +37,16 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <header role="banner" id="header">
-          <section className="head-container maxwidth-wrap">
+        <Headroom>
+          <header role="banner" id="header">
+            <section className="head-container maxwidth-wrap">
             
-            <h1 className="logo">Convoy</h1>
-            <Search onSearch={this.performSearch} />
+              <h2 className="logo">Convoy</h2>
+              <Search onSearch={this.performSearch} />
             
-          </section>
-        </header>
+            </section>
+          </header>
+        </Headroom>
         <main role="main" id="main">
           <section className="main-container maxwidth-wrap">
           

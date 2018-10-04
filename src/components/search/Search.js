@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './search.css';
-
+import searchIcon from './baseline-search-24px.svg';
 export default class Search extends Component {
   state = {
     searchText: ''
@@ -28,7 +28,7 @@ export default class Search extends Component {
           placeholder="Ex: Plants"
         />
         <button type="submit" id="submit" className="submit-button">
-          search
+          <img src={searchIcon} alt="search icon"/>
         </button>
       </form>
     );
