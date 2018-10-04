@@ -22,7 +22,7 @@
 
 .image-li:hover {
   opacity: 1!important;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .image-description {
