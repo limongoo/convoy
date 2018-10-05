@@ -4,6 +4,7 @@ import axios from 'axios';
 import Search from '../search/Search';
 import Images from '../image/Images';
 import Headroom from 'react-headroom';
+import ScrollAnimation from 'react-animate-on-scroll';
 const UCLIENT_ID = `${process.env.REACT_APP_UCLIENT_ID}`;
 
 class App extends Component {
@@ -59,11 +60,13 @@ class App extends Component {
               : <Images data={this.state.imgs} />}
           </section>
         </main>
+            <ScrollAnimation animateIn='fadeIn'>
         <footer role="contentinfo" id="footer">
           <section className="footer maxwidth-wrap"> 
-            <p>(c) <a href="https://github.com/limongoo/convoy" target="_blank" rel="author noopener noreferrer">Convoy — Ivan Limongan</a></p>
+              <p>(c) <a href="https://github.com/limongoo/convoy" target="_blank" rel="author noopener noreferrer">Convoy — Ivan Limongan</a></p>
           </section>
         </footer>
+            </ScrollAnimation>
 
       </div>
     );
