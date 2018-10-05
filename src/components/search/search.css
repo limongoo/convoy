@@ -19,11 +19,15 @@ input:focus {
   outline: 0;
   position: relative;
   z-index: 2000;
+  margin: 0 0 0 -3rem;
+}
+
+.search-form {
+  display: flex;
 }
 
 .search-form input:only-of-type {
   width: 100%;
-  margin: 0 -40px 0 0;
   padding: 1.5rem 2rem 1.5rem 1rem;
 }
 
