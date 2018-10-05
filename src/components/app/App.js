@@ -24,7 +24,7 @@ class App extends Component {
   performSearch = (query = 'plants') => {
     axios
       .get(
-        `https://api.unsplash.com/search/photos/?page=1&per_page=30&query=${query}&client_id=${UCLIENT_ID}`
+        `https://api.unsplash.com/search/photos/?page=1&per_page=40&query=${query}&client_id=${UCLIENT_ID}`
       )
       .then(data => {
         this.setState({ imgs: data.data.results, loadingState: false });
