@@ -40,8 +40,12 @@ class App extends Component {
         <Headroom>
           <header role="banner" id="header">
             <section className="head-container maxwidth-wrap">
-            
-              <h2 className="logo">Convoy</h2>
+              
+              <div className="logo-wrap">
+                <h2 className="logo">Convoy</h2>
+                <p>An image search app powered by Unsplash</p>
+              </div>
+              
               <Search onSearch={this.performSearch} />
             
             </section>
