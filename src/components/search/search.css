@@ -5,15 +5,20 @@ input {
   border: 4px solid #fff;
   outline: 0;
   transition: 0.3s ease all;
+  opacity: 0.4;
 }
 
 input:hover {
   border: 4px solid #e1e1e1;
+  opacity: 1;
 }
 
 input:focus {
   border-color: #c1c1c1;
+  opacity: 1;
 }
+
+
 
 #submit {
   width: 40px;

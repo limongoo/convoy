@@ -38,6 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+      
         <Headroom>
           <header role="banner" id="header">
             <section className="head-container maxwidth-wrap">
@@ -52,6 +53,7 @@ class App extends Component {
             </section>
           </header>
         </Headroom>
+
         <main role="main" id="main">
           <section className="main-container maxwidth-wrap">
           
@@ -60,13 +62,13 @@ class App extends Component {
               : <Images data={this.state.imgs} />}
           </section>
         </main>
-            <ScrollAnimation animateIn='fadeIn'>
+
         <footer role="contentinfo" id="footer">
           <section className="footer maxwidth-wrap"> 
-              <p>(c) <a href="https://github.com/limongoo/convoy" target="_blank" rel="author noopener noreferrer">Convoy — Ivan Limongan</a></p>
+            <p>(c) <a href="https://github.com/limongoo/convoy" target="_blank" rel="author noopener noreferrer">Convoy — Ivan Limongan</a></p>
           </section>
         </footer>
-            </ScrollAnimation>
+   
 
       </div>
     );

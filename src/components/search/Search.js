@@ -25,7 +25,7 @@ export default class Search extends Component {
           onChange={this.onSearchChange}
           ref={input => (this.query = input)}
           name="search"
-          placeholder="Ex: Plants"
+          placeholder="Search"
         />
         <button type="submit" id="submit" className="submit-button">
           <img src={searchIcon} alt="search icon"/>
