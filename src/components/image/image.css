@@ -1,16 +1,11 @@
 .image-ul {
-  /* display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-  list-style: none;
-  padding: 0; */
   list-style: none;
   column-gap: 0.5rem;
   opacity: 1;
 }
 
 .image-ul:hover .image-li {
- opacity: 0.5;
+ opacity: 0.55;
 }
 
 .image-li {
