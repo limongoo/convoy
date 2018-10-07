@@ -11,9 +11,11 @@ const Image = props =>
       </ScrollAnimation>
     </a>
     <p className="image-description">
-			Photo: 
-      <a href={props.user} target="_blank" rel="author noopener noreferrer"> {props.name}</a> — 
-      <a href={props.link} target="_blank" rel="author noopener noreferrer"> Unsplash</a>
+      <img className="user-profile" src={props.userProfile} alt={props.name}/>
+      <span className="image-description-offset">
+        <a href={props.user} target="_blank" rel="author noopener noreferrer">{props.name}</a> — 
+        <a href={props.link} target="_blank" rel="author noopener noreferrer"> Unsplash</a>
+      </span>
     </p>
   </li>;
   

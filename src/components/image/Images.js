@@ -11,6 +11,7 @@ const Images = props => {
       <Image
         url={img.urls.small}
         user={img.user.links.html}
+        userProfile={img.user.profile_image.small}
         name={img.user.name}
         link={img.links.html}
         key={img.id}
