@@ -16,7 +16,8 @@
     "react-router-dom": "^4.2.2",
     "react-router-scroll-top": "^0.1.1",
     "react-scripts": "1.1.5",
-    "react-scrollable-anchor": "^0.6.1"
+    "react-scrollable-anchor": "^0.6.1",
+    "react-spinners": "^0.4.5"
   },
   "scripts": {
     "build:css": "postcss src/styles/main.css -o src/index.css",

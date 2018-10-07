@@ -9,7 +9,7 @@ const Images = props => {
   if(results.length > 0) {
     img = results.map(img =>
       <Image
-        url={img.urls.thumb}
+        url={img.urls.small}
         user={img.user.links.html}
         name={img.user.name}
         link={img.links.html}

@@ -4,7 +4,7 @@ import axios from 'axios';
 import Search from '../search/Search';
 import Images from '../image/Images';
 import Headroom from 'react-headroom';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { BounceLoader } from 'react-spinners';
 const UCLIENT_ID = `${process.env.REACT_APP_UCLIENT_ID}`;
 
 class App extends Component {
@@ -36,9 +36,12 @@ class App extends Component {
   };
 
   render() {
+
+    
+
     return (
       <div className="app">
-      
+
         <Headroom>
           <header role="banner" id="header">
             <section className="head-container maxwidth-wrap">
@@ -58,7 +61,13 @@ class App extends Component {
           <section className="main-container maxwidth-wrap">
           
             {this.state.loadingState
-              ? <p>Loading Images</p>
+              ? <div className="loading">
+                <BounceLoader 
+                  size={60}
+                  color={'#36D7B7'}
+                  
+                />
+              </div>
               : <Images data={this.state.imgs} />}
           </section>
         </main>

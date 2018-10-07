@@ -101,6 +101,10 @@
   padding: 0 1rem;
 }
 
+.loading {
+  margin: 0 auto;
+}
+
 .main-container {
   text-align: left;
   padding: 0;
