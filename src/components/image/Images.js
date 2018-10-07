@@ -9,12 +9,12 @@ const Images = props => {
   if(results.length > 0) {
     img = results.map(img =>
       <Image
+        link={img.links.html}
+        key={img.id}
+        name={img.user.name}
         url={img.urls.small}
         user={img.user.links.html}
         userProfile={img.user.profile_image.small}
-        name={img.user.name}
-        link={img.links.html}
-        key={img.id}
       />
     );
   } else {
