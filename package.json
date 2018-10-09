@@ -12,6 +12,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.5.2",
     "react-headroom": "^2.2.2",
+    "react-lazy-load-image-component": "^1.1.4",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-router-scroll-top": "^0.1.1",
