@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build:css": "postcss src/styles/main.css -o src/index.css",
-    // "watch:css": "postcss src/styles/main.css -o src/index.css -w",
+    "watch:css": "postcss src/styles/main.css -o src/index.css -w",
     // "lint": "eslint src",
     // "prebuild": "npm run lint",
     "start": "react-scripts start webpack-dev-server -p watch:css start-js",
