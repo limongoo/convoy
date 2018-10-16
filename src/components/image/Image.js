@@ -1,14 +1,11 @@
 import React from 'react';
 import './image.css';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const Image = props =>
   
   <li className="image-li">
     <a href={props.link} target="_blank" rel="author noopener noreferrer">
-      <ScrollAnimation animateIn='fadeIn'>
-        <img src={props.url} alt={props.name} />
-      </ScrollAnimation>
+      <img src={props.url} alt={props.name} />
     </a>
     <p className="image-description">
       <img className="user-profile" src={props.userProfile} alt={props.name}/>
