@@ -17,13 +17,12 @@
   display: inline-block;
   margin:  0.25rem;
   padding:  1rem;
-  width:  100%; 
   transition: 0.3s ease all;
 }
 
 .image-li:hover {
   opacity: 1!important;
-  // transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .image-li img {
