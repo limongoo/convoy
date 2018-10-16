@@ -21,7 +21,7 @@
     "react-spinners": "^0.4.5"
   },
   "scripts": {
-    // "build:css": "postcss src/styles/main.css -o src/index.css",
+    "build:css": "postcss src/styles/main.css -o src/index.css",
     // "watch:css": "postcss src/styles/main.css -o src/index.css -w",
     // "lint": "eslint src",
     // "prebuild": "npm run lint",
